@@ -1,0 +1,54 @@
+@import '../../scss/colors';
+@import '../../scss/typography';
+
+$drop-shadow: rgba(0, 0, 0, .2);
+
+.results {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  flex-flow: row wrap;
+}
+
+.results__item {
+  display: flex;
+  position: relative;
+  margin: 0 1% 15px;
+  box-shadow: 0 3px 20px $drop-shadow;
+  background: $card-bg;
+  padding: 15px 20px;
+  width: 48%;
+  overflow: hidden;
+  list-style: none;
+  flex-direction: column;
+}
+
+.results__title {
+  display: inline-block;
+  margin: 0 0 10px;
+  border-bottom: 1px solid $highlight-color;
+  padding-bottom: 3px;
+  line-height: 2rem;
+  font-family: $header-font;
+  font-size: 1.5rem;
+  text-align: center;
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+.results__info {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 1.5rem;
+  font-weight: bold;
+
+  span {
+    font-weight: normal;
+    color: $highlight-color;
+  }
+}
