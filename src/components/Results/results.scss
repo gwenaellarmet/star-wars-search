@@ -52,3 +52,14 @@ $drop-shadow: rgba(0, 0, 0, .2);
     color: $highlight-color;
   }
 }
+
+.results__link {
+  text-align: center;
+
+  padding: 10px 0 0 0;
+  
+  a {
+    text-decoration: none;
+    color: $base-color;
+  }
+}

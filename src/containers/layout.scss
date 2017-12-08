@@ -1,46 +1,5 @@
-@import '../scss/colors';
-@import '../scss/typography';
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: $body-bg;
-  padding: 0;
-  color: $base-color;
-  font-family: $body-font;
-  font-size: $body-font-size;
-}
-
-a {
-  text-decoration: none;
-  color: $highlight-color;
-
-  &:hover {
-    color: darken($highlight-color, 10%);
-  }
-}
-
 .container {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
-
-.no__result {
-  text-align: center;
-}
-
-.header {
-  display: flex;
-  padding: 0 20px;
-  width: 100%;
-  color: $base-color;
-  flex-direction: row;
-}
-
-.content {
-  padding: 20px;
-  width: 100%;
-}
+  

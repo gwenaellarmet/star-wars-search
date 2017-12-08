@@ -1,5 +1,7 @@
 import { combineReducers } from 'redux';
-import { REQUEST_ITEMS, RECEIVE_ITEMS, UPDATE_SRC } from '../actions/items';
+import { REQUEST_ITEMS, 
+         RECEIVE_ITEMS, 
+         UPDATE_SRC } from '../actions/items';
 
 function searchStr(state = '', action) {
   switch (action.type) {
@@ -45,5 +47,5 @@ function itemsBySearchString(state = {}, action) {
 
 export default combineReducers({
   itemsBySearchString,
-  searchStr,
+  searchStr
 });

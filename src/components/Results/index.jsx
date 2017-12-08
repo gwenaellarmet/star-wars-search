@@ -1,10 +1,13 @@
 import React, { PropTypes } from 'react';
 
+import { Link } from 'react-router';
+
 import Person from './person.jsx';
 import Film from './film.jsx';
 import Planet from './planet.jsx';
 import Starship from './starship.jsx';
 import Species from './species.jsx';
+import Vehicle from './vehicles.jsx';
 
 import './results.scss';
 
@@ -19,6 +22,8 @@ const Results = props => (
         case 'species':
           return <Species key={i} item={item} />;
         case 'starship':
+          return <Starship key={i} item={item} />;
+        case 'vehicle':
           return <Starship key={i} item={item} />;
         default:
           return <Person key={i} item={item} />;

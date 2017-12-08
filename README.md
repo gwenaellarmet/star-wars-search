@@ -10,5 +10,5 @@ simple search in swapi API (http://swapi.co)
 
 * WebSite design [DONE]
 * See all result [DONE]
-* Set routing for multiple page
-* Item View with all related item (ex: a planet is in x movies)
+* Set routing for multiple page [DONE]
+* Item View with all related item (ex: a planet is in x movies) [DONE]

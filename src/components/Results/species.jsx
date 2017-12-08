@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 
-const Film = props => (
+import { Link } from 'react-router';
+
+const Species = props => (
   <li className="results__item">
     <h3 className="results__title">
       {props.item.name}
@@ -10,10 +12,13 @@ const Film = props => (
       <li>Classification <span>{props.item.classification}</span> </li>
       <li>Language <span>{props.item.language}</span> </li>
     </ul>
+    <ul className="results__link">
+      <Link to={"species/" + props.item.id}>See details...</Link>
+    </ul>
   </li>
 );
 
-Film.propTypes = {
+Species.propTypes = {
   item: PropTypes.shape({
     designation: PropTypes.string,
     name: PropTypes.string.isRequired,
@@ -23,4 +28,4 @@ Film.propTypes = {
   }),
 };
 
-export default Film;
+export default Species;
